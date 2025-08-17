@@ -1,0 +1,81 @@
+name: Access request (paid SDK)
+description: Request paid access, a trial, or a quote for the Windows MSVC /MD Toolchain SDK.
+title: "[Access] Org/Name — Access/Trial/Quote"
+labels: ["access", "sales", "triage"]
+assignees: []
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What do you need?
+      options:
+        - Paid access
+        - Trial
+        - Quote
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+      placeholder: "name@example.com"
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: Company/Org (or individual)
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended use
+      description: Briefly describe your product/use case.
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime preference
+      options:
+        - "/MD (default)"
+        - "/MT (special request)"
+    validations:
+      required: true
+  - type: input
+    id: seats
+    attributes:
+      label: Estimated seats/CI machines
+      placeholder: "e.g., 10 devs, 3 CI runners"
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline / deadline
+      placeholder: "e.g., need by Sept 30"
+  - type: dropdown
+    id: purchasing
+    attributes:
+      label: Purchasing method
+      options:
+        - "Credit card (Gumroad)"
+        - "PO/Invoice"
+        - "Other"
+  - type: input
+    id: country
+    attributes:
+      label: Billing country
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / requirements
+      description: NDA, security review, vendor registration, etc.
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand this repository is docs-only; binaries are paid access.
+          required: true
+        - label: Do not post sensitive information here (use email for private topics).
+          required: true

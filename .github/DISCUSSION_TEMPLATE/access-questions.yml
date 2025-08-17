@@ -1,13 +1,19 @@
-name: Access question
-description: Public question about obtaining the SDK, editions/SKUs, or shipping DLLs.
 title: "[Access Q] <short question>"
-labels: ["access", "question"]
-category: Access Questions
+labels:
+  - access
+  - question
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Public Access Q&A for the Windows MSVC /MD Toolchain SDK.
+        **Please avoid posting private or sensitive info.**
   - type: textarea
     id: question
     attributes:
       label: Your question
-      description: Please avoid posting private or sensitive info.
+      description: Ask about editions/SKUs, shipping DLLs, or workflow.
+      placeholder: "e.g., Do I need to ship uv.dll with the /MD edition?"
     validations:
       required: true
+

@@ -1,0 +1,30 @@
+Proprietary Documentation License — Windows MSVC /MD Toolchain SDK (Docs Only)
+
+Copyright (c) 2025 Justin Hoyt. All rights reserved.
+
+This repository contains documentation, marketing text, and metadata only (the “Docs”).
+No source code, build scripts, or binaries are licensed here. This is not an open-source
+license.
+
+You MAY:
+• Read and browse this repository.
+• Link to it.
+• Quote brief excerpts of the Docs (<= 200 words per page) with attribution and a link.
+
+You MAY NOT, without prior written permission:
+• Copy, fork, mirror, modify, or redistribute the Docs or any files in this repository.
+• Create derivative works based on the Docs.
+• Use the Docs for any commercial purpose, including resale, paywalled access, or packaging
+  with any software distribution.
+• Claim endorsement or use trademarks; all trademarks remain the property of their owners.
+
+No license is granted to any software artifacts (SDK binaries, install trees, or scripts).
+Access to those artifacts is sold under a separate commercial license.
+
+Third-party notices: Paid SDK bundles include third-party components under their own
+licenses; see `licenses/THIRD_PARTY.md` for the mapping and the bundles for full texts.
+
+THE DOCS ARE PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY.
+
+Contact: stillstanding.stillburning@gmail.com

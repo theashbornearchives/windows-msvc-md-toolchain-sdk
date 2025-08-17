@@ -154,6 +154,8 @@ Not a free binary mirror — this repo is docs-only; access is paid.
 
 Licensing & attribution: 
 See licenses/THIRD_PARTY.md for the component-to-license map (full license texts ship inside the paid SDK). For LGPL/GPL–touched components such as libidn2 and libunistring, I do not statically link them in proprietary targets; they are shipped as DLLs with import libs or omitted entirely depending on edition/SKU.
+
+
 Access & support: 
 Access to binaries, install trees, and build scripts is paid. 
 

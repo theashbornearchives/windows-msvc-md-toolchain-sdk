@@ -156,7 +156,9 @@ Licensing & attribution:
 See licenses/THIRD_PARTY.md for the component-to-license map (full license texts ship inside the paid SDK). For LGPL/GPL–touched components such as libidn2 and libunistring, I do not statically link them in proprietary targets; they are shipped as DLLs with import libs or omitted entirely depending on edition/SKU.
 Access & support: 
 Access to binaries, install trees, and build scripts is paid. 
+
 Contact me at stillstanding.stillburning@gmail.com. 
+
 A Gumroad store page is coming soon; the purchase link will be added here when live. Public questions should go to GitHub Discussions under the “Access Questions” category. Formal requests (access, trials, quotes) should be filed as a GitHub Issue using the “Access request” template. For private or sensitive topics (pricing, invoices, security reviews), email is preferred.
 FAQ
 Q: Is this vcpkg/Conan?

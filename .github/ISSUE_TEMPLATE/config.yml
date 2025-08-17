@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public Q&A — Access Questions (Discussions)
+    url: https://github.com/theasthomearchives/windows-msvc-md-toolchain-sdk/discussions/new?category=access-questions
+    about: Ask general questions about editions, shipping DLLs, or suitability.
+  - name: Private email (pricing/invoices/security reviews)
+    url: mailto:stillstanding.stillburning@gmail.com
+    about: Use email for sensitive topics or anything that needs privacy.

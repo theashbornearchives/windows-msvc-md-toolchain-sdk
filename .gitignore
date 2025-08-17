@@ -1,41 +1,66 @@
-# Prerequisites
-*.d
+# ── OS cruft ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# ── Editors / IDEs ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.vs/
+*.code-workspace
+
+# ── CMake / Ninja build products ───────────────────────────────────────────
+build*/
+out*/
+dist*/
+cmake-build*/
+CMakeFiles/
+CMakeCache.txt
+**/_deps/
+*.ninja
+.ninja_log
+.ninja_deps
+
+# ── MSBuild/MSVC artifacts ────────────────────────────────────────────────
 *.obj
-
-# Precompiled Headers
-*.gch
+*.o
 *.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.idb
+*.ilk
+*.tlog
+*.exp
 *.lib
-
-# Executables
+*.dll
 *.exe
-*.out
-*.app
+*.manifest
+*.iobj
+*.ipdb
+*.sdf
+*.opensdf
+*.lastbuildstate
 
-# debug information files
-*.dwo
+# ── Python (if you add helper scripts later) ──────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── Logs / temps ──────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+~$*
+
+# ── Archives (avoid accidentally committing SDK bundles) ──────────────────
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tar.xz
+
+# ── Certificates / keys (docs-only repo shouldn’t contain real ones) ─────
+certs/*.pem
+*.key
+*.pfx
+*.p12

@@ -156,20 +156,35 @@ Licensing & attribution:
 See licenses/THIRD_PARTY.md for the component-to-license map (full license texts ship inside the paid SDK). For LGPL/GPL–touched components such as libidn2 and libunistring, I do not statically link them in proprietary targets; they are shipped as DLLs with import libs or omitted entirely depending on edition/SKU.
 
 
-Access & support: 
-Access to binaries, install trees, and build scripts is paid. 
+## Access & support
 
-Contact me at stillstanding.stillburning@gmail.com. 
+**Access to binaries, install trees, and build scripts is paid.**  
+Contact: **stillstanding.stillburning@gmail.com**  
+*A Gumroad store page is coming soon; the purchase link will be added here when live.*
 
-A Gumroad store page is coming soon; the purchase link will be added here when live. Public questions should go to GitHub Discussions under the “Access Questions” category. Formal requests (access, trials, quotes) should be filed as a GitHub Issue using the “Access request” template. For private or sensitive topics (pricing, invoices, security reviews), email is preferred.
-FAQ
-Q: Is this vcpkg/Conan?
- A: No. It’s a prebuilt, reproducible /MD linking SDK you unzip and use. In SKUs that include export files, set CMAKE_PREFIX_PATH and use find_package(... CONFIG).
-Q: Does it include a compiler?
- A: No. You bring MSVC v143 (VS 2022) and the Windows SDK.
-Q: /MT support?
- A: A separate /MT edition is available on special request, but has to be built, and it would take weeks.
-Q: End-user runtime?
- A: Prefer the official VC++ Redistributable for security updates. Portable ZIPs with local CRT DLLs are also supported for no-installer workflows.
-Q: Which DLLs am I expected to ship?
- A: Only the declared set (e.g., libidn2-0.dll, libunistring-5.dll, libpsl-5.dll, uv.dll; optional zlib.dll if you choose DLL for zlib). Everything else links static by default. Import libs for these DLLs are in lib/.
+- **Public Q&A:** [Discussions → Access Questions](https://github.com/theashbornearchives/windows-msvc-md-toolchain-sdk/discussions/categories/access-questions)
+- **Formal requests (access, trials, quotes):** [Open an Access request](https://github.com/theashbornearchives/windows-msvc-md-toolchain-sdk/issues/new?template=access-request.yml)
+- **Private or sensitive topics (pricing, invoices, security reviews):** email is preferred.
+
+---
+
+## FAQ
+
+**Q: Is this vcpkg/Conan?**  
+**A:** No. It’s a prebuilt, reproducible **/MD** linking SDK you unzip and use.  
+In SKUs that include export files, set `CMAKE_PREFIX_PATH` and use `find_package(... CONFIG)`.
+
+**Q: Does it include a compiler?**  
+**A:** No. You bring **MSVC v143 (VS 2022)** and the **Windows 10+ SDK**.
+
+**Q: /MT support?**  
+**A:** A separate **/MT** edition is available on special request; it must be built and will take time.
+
+**Q: End-user runtime?**  
+**A:** Prefer the official **VC++ Redistributable** for security updates.  
+Portable ZIPs with local CRT DLLs are also supported for no-installer workflows.
+
+**Q: Which DLLs am I expected to ship?**  
+**A:** Only the declared set (e.g., `libidn2-0.dll`, `libunistring-5.dll`, `libpsl-5.dll`, `uv.dll`; optional `zlib.dll` if you choose DLL for zlib).  
+Everything else links static by default. Import libs for these DLLs are in `lib/`.
+

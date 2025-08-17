@@ -162,7 +162,7 @@ See licenses/THIRD_PARTY.md for the component-to-license map (full license texts
 Contact: **stillstanding.stillburning@gmail.com**  
 *A Gumroad store page is coming soon; the purchase link will be added here when live.*
 
-- **Public Q&A:** [Discussions → Access Questions](https://github.com/theashbornearchives/windows-msvc-md-toolchain-sdk/discussions/categories/access-questions)
+- **Public Q&A:** [Discussions → Access Questions](https://github.com/theashbornearchives/windows-msvc-md-toolchain-sdk/discussions/new?category=access-questions)
 - **Formal requests (access, trials, quotes):** [Open an Access request](https://github.com/theashbornearchives/windows-msvc-md-toolchain-sdk/issues/new?template=access-request.yml)
 - **Private or sensitive topics (pricing, invoices, security reviews):** email is preferred.
 

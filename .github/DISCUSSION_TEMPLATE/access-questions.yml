@@ -1,0 +1,13 @@
+name: Access question
+description: Public question about obtaining the SDK, editions/SKUs, or shipping DLLs.
+title: "[Access Q] <short question>"
+labels: ["access", "question"]
+category: Access Questions
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Please avoid posting private or sensitive info.
+    validations:
+      required: true
